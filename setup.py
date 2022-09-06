@@ -35,7 +35,7 @@ libnumpythia = Extension(
         'numpythia/src/extern/hepmc3.0.0/include',
         'numpythia/src/extern/pythia8244/include',
     ],
-    extra_compile_args={'gcc': ['/Qstd=c99']},
+    extra_compile_args={'gcc': ['/Qstd=c++11']},
     define_macros=[
         ('XMLDIR', '""'),
     ],

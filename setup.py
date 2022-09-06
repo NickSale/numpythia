@@ -37,8 +37,6 @@ libnumpythia = Extension(
     ],
     extra_compile_args=[
         '-std=c++11',  # for HepMC
-        '-Wno-unused-function',
-        '-Wno-write-strings',
     ],
     define_macros=[
         ('XMLDIR', '""'),

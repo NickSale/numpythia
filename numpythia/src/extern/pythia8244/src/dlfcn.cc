@@ -566,7 +566,7 @@ void *dlsym( void *handle, const char *name )
         }
     }
 
-//end:
+end:
     if( symbol == NULL )
     {
         if( !dwMessageId )

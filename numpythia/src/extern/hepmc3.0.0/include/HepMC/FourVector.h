@@ -10,6 +10,7 @@
  *  @brief Definition of \b class FourVector
  */
 #include "HepMC/Common.h"
+#define _USE_MATH_DEFINES
 #include <cmath>
 
 namespace HepMC {

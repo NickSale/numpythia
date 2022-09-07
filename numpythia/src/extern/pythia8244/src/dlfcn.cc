@@ -56,7 +56,7 @@ typedef ULONG ULONG_PTR;
 #ifndef _ReturnAddress
 #define _ReturnAddress( ) ( __builtin_extract_return_addr( __builtin_return_address( 0 ) ) )
 #endif
-//#endif
+#endif
 
 #ifdef DLFCN_WIN32_SHARED
 #define DLFCN_WIN32_EXPORTS

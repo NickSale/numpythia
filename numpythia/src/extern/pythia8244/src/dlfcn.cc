@@ -59,7 +59,7 @@ typedef ULONG ULONG_PTR;
 #ifdef DLFCN_WIN32_SHARED
 #define DLFCN_WIN32_EXPORTS
 #endif
-#include "dlfcn.h"
+#include "Pythia8/dlfcn.h"
 
 #if defined( _MSC_VER ) && _MSC_VER >= 1300
 /* https://docs.microsoft.com/en-us/cpp/cpp/noinline */

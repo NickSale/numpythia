@@ -10,7 +10,7 @@
 
 #include "HepMC/Common.h"
 
-#if defined(HEPMC_HAS_CXX11) || defined(HEPMC_HAS_CXX0X_GCC_ONLY)
+//#if defined(HEPMC_HAS_CXX11) || defined(HEPMC_HAS_CXX0X_GCC_ONLY)
 
 #include <memory>
 namespace HepMC {
@@ -21,9 +21,9 @@ namespace HepMC {
     using std::const_pointer_cast;
 }
 
-#else
-#error At least partial C++ 2011 support is required!
-#endif
+//#else
+//#error At least partial C++ 2011 support is required!
+//#endif
 
 
 namespace HepMC {

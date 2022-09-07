@@ -33,6 +33,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <intrin.h>
+
 /* Older versions do not have this type */
 #if _WIN32_WINNT < 0x0500
 typedef ULONG ULONG_PTR;
@@ -46,10 +48,10 @@ typedef ULONG ULONG_PTR;
 #define GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT 0x2
 #endif
 
-//#ifdef _MSC_VER
+#ifdef _MSC_VER
 /* https://docs.microsoft.com/en-us/cpp/intrinsics/returnaddress */
-//#pragma intrinsic( _ReturnAddress )
-//#else
+#pragma intrinsic( _ReturnAddress )
+#else
 /* https://gcc.gnu.org/onlinedocs/gcc/Return-Address.html */
 #ifndef _ReturnAddress
 #define _ReturnAddress( ) ( __builtin_extract_return_addr( __builtin_return_address( 0 ) ) )
